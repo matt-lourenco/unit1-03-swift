@@ -19,7 +19,7 @@ while true {
 	print("Enter the mass of the object in grams: ")
     input = readLine(strippingNewline: true)
     //check if input is a valid number
-	if let check = Double(input!), check != nil {
+	if Double(input!) != nil {
 		massOfObject = Double(input!)!
 		energy = massOfObject * pow(speedOfLight, 2)
 		print("The amount of energy released from \(massOfObject) g of "
